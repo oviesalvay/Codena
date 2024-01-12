@@ -1,0 +1,24 @@
+
+@import '../../scss/mixin';
+
+header{
+    @include padding;
+    nav{
+        @include flex;
+        .register{
+           @include flex-align;
+            .Sign{
+                background-color: #0F0F14;
+                color:#fff;
+                padding: .6rem 1.6rem;
+                border-radius: .6rem;
+                border: none;
+            }
+            a{
+                margin:0 1rem;
+                text-decoration: none;
+                color:#0F0F14;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+
+@mixin padding{
+    padding:1rem clamp(6rem, 5vh, 6rem)6rem;
+}
+@mixin flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+@mixin flex-align{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    gap:1rem;
+    // flex-grow: 1;
+}

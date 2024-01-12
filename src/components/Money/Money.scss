@@ -1,0 +1,41 @@
+@import '../../scss//mixin';
+
+.money-intro{
+    @include padding;
+    @include flexbox;
+    .flex1{
+        flex-basis: 250px;
+        flex-grow: 1;
+    }
+    .flex2{
+        flex-basis: 250px;
+        flex-grow: 1;  
+    }
+    .money{
+        @include flex-align;
+        padding: .3rem 1rem;
+        background-color: rgba(128, 128, 128, 0.3);
+        width:55%;
+        border-radius: 1rem;
+        color:#712FFF;
+        margin: 0 .3rem;
+        .new{
+            span{
+                background-color: white;
+                border-radius: .5rem;
+                padding:.2rem .1rem;
+                color:#712FFF;
+                margin: 0 0rem 0 -.1rem;
+            }
+        }
+    }
+    div{
+        h1{
+            font-size: 2.8rem;
+            margin:1rem 0;
+        }
+        span{
+            color:#712FFF;  
+        }
+    }
+}

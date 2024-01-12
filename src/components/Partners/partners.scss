@@ -1,0 +1,11 @@
+@import '../../scss/mixin';
+
+.partners{
+    // @include padding;
+    >img{
+        margin:1rem 4.5rem;
+    }
+    p{
+        text-align: center;
+    }
+}
