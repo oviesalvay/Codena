@@ -1,0 +1,27 @@
+@import '../../scss/mixin';
+
+.unique-intro{
+    @include padding;
+    @include flexbox;
+    background-color: #FAF8F5;
+    .unique{
+        flex-basis: 450px;
+        // flex-grow: 1;
+        >img{
+           width: 150% !important;;
+        }
+        h2{
+            font-size: 2.4rem;
+        }
+    }
+    
+}
+@media screen and (max-width:990px){
+    .unique-intro{
+        padding: 1rem;
+        gap:0;
+        .unique{
+            flex-basis: 500px;
+        }
+    }
+}

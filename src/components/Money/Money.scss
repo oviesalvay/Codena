@@ -6,6 +6,11 @@
     .flex1{
         flex-basis: 250px;
         flex-grow: 1;
+        .app{
+          .apps{
+            margin:2rem 0;
+          }
+        }
     }
     .flex2{
         flex-basis: 250px;
@@ -20,7 +25,7 @@
         color:#712FFF;
         margin: 0 .3rem;
         .new{
-            span{
+            #new{
                 background-color: white;
                 border-radius: .5rem;
                 padding:.2rem .1rem;
@@ -37,5 +42,10 @@
         span{
             color:#712FFF;  
         }
+    }
+}
+@media screen and (max-width:990px){
+    .money-intro{
+        padding: 1rem;
     }
 }

@@ -1,20 +1,25 @@
+import { useState } from 'react'
 import Union from '../Navbar/Union.png'
 import './Navbar.scss'
+
 const Navbar = () =>{
+    const [shownav, setShowNav]=useState(false)
+const handleClick=()=>{
+  setShowNav(!shownav)
+}
+    
     return(
         <>
         <header>
             <nav>
-                <div className='register'>
-                    <div>
+            
                     <img src={Union}alt=""/>
-                    </div>
-                    <div>
+                <div className= {shownav ?  "navlinks navlinks_close" : "navlinks"}>
+                    <div className='navbar'>
                     <a href="Home">Home</a>
                     <a href="Home">Privacy</a>
                     <a href="Home">Terms</a>
                     </div>
-                </div>
                 <div className='register'>
                 <div>
                     <a href="login">Login</a>
@@ -22,6 +27,12 @@ const Navbar = () =>{
                 <div>
                     <button className='Sign'>Sign Up</button>
                 </div>
+                </div>
+                </div>
+                <div onClick={handleClick} className='hamburger'>
+                    <span onClick={handleClick}className='bar'></span>
+                    <span onClick={handleClick} className='short'></span>
+                    <span onClick={handleClick}className='bar'></span>
                 </div>
             </nav>
         </header>

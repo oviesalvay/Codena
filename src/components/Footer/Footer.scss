@@ -1,0 +1,21 @@
+@import '../../scss/mixin';
+
+footer{
+    @include flexwrap;
+    // @include padding;
+    padding: 1rem 5rem;
+    >div{
+        flex-basis: 350px;
+    }
+    .social-icon{
+        >img{
+            margin:0 1rem;
+        }
+    }
+}
+@media screen and (max-width:990px){
+    footer{
+        padding: 1rem;
+        text-align: center;
+    }
+}

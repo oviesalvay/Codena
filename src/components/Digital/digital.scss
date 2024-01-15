@@ -1,0 +1,50 @@
+@import '../../scss/mixin';
+
+.digital{
+    text-align: center;
+    margin: 2rem 0;
+    @include padding;
+    p{
+        margin: 2rem 0;
+    }
+    .cards{
+        display: flex;
+      gap:1rem;
+      
+      >div{
+        .card1{
+            @include flex-wrap;
+            margin: .5rem 0;
+            text-align: center;
+        }
+    }
+    .card2{
+        margin: .5rem 0;
+        text-align: center;
+        box-shadow: 2px -4px 35px -8px rgba(0, 0, 0, 0.18);
+    }
+    .card{
+        padding: 1rem 2rem;
+        border-radius: .6rem;
+            flex-basis:300px;
+            flex-grow: 1;
+            box-shadow: 2px -4px 35px -8px rgba(0, 0, 0, 0.18);
+            span{ 
+                color:#712FFF; 
+            }
+            h5{
+                font-size: 1rem;
+                margin:.7rem 0;
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:990px){
+    .digital{
+        padding: 1.2rem;
+        .cards{
+           display: block;
+        }
+    }
+}

@@ -9,3 +9,10 @@
         text-align: center;
     }
 }
+@media screen and (max-width:990px){
+    .partners{
+        >img{
+            margin:1rem;
+        }
+    }
+}
