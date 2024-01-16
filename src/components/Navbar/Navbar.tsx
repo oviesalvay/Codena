@@ -11,7 +11,6 @@ const handleClick=()=>{
         <>
         <header>
             <nav>
-            
                     <img src={Union}alt=""/>
                 <div className= {shownav ?  "navlinks navlinks_close" : "navlinks"}>
                     <div className='navbar'>
