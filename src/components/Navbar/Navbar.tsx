@@ -7,7 +7,6 @@ const Navbar = () =>{
 const handleClick=()=>{
   setShowNav(!shownav)
 }
-    
     return(
         <>
         <header>
