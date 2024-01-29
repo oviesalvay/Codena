@@ -5,9 +5,9 @@
   box-sizing:border-box;
   overflow-x: hidden;
 }
-
 body {
  background-color: white;
+ overflow-x: hidden;
 }
 img{
   max-width: 100%;
